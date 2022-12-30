@@ -1,0 +1,24 @@
+# Escreva um programa simples que processe a entrada e retorne a saída, conforme exemplos abaixo: 
+#a. “Miritiba 339” -> {“Miritiba”, “339”}
+#b. “Rio Branco 23” -> {“Rio Branco”, “23”}
+
+endereço = input ("Digite seu endereço, contendo nome da rua e número, apenas com espaços: \n")
+
+dividir = endereço.split() #aqui vai separar sempre que achar espaço, transformando numa lista.
+dividir.pop (-1) #retira da lista "dividir" o último item apenas o ultimo elemento da lista, no caso o numero.
+
+dividir2 = endereço.split() #igual o "dividir", mas como este já excluiu totalmente o ultimo elemento depois do pop, não serve mais. Tive que criar uma nova variável igual.
+
+print ('')
+
+print("Logradouro:",' '.join(dividir)) #junta as strings.
+print("Número:", dividir2 [-1]) #traz o último elemnto da lista dividir2.
+
+
+
+
+
+
+
+
+
